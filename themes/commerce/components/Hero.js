@@ -13,7 +13,7 @@ const Hero = props => {
   // 正则表达式，用于匹配 URL 中的 w 参数
   const wRegex = /w=\d+/
 
-  siteInfo?.pageCover
+  siteInfo?.pageCover = siteInfo?.pageCover
     .replace(widthRegex, `width=2000`)
     .replace(wRegex, `w=2000`)
   return (
