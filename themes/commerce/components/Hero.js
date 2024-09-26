@@ -8,14 +8,6 @@ import LazyImage from '@/components/LazyImage'
  */
 const Hero = props => {
   const { siteInfo } = props
-  // 正则表达式，用于匹配 URL 中的 width 参数
-  const widthRegex = /width=\d+/
-  // 正则表达式，用于匹配 URL 中的 w 参数
-  const wRegex = /w=\d+/
-
-  siteInfo?.pageCover = siteInfo?.pageCover
-    .replace(widthRegex, `width=2000`)
-    .replace(wRegex, `w=2000`)
   return (
         <header id="header" className="w-full h-auto aspect-[5/2] relative bg-black" >
 
