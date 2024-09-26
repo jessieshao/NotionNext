@@ -62,6 +62,7 @@ export default function LazyImage({
     // 加载原图
     const img = new Image()
     img.src = adjustedImageSrc
+    console.log(adjustedImageSrc)
     img.onload = () => {
       setCurrentSrc(adjustedImageSrc)
       handleImageLoaded(adjustedImageSrc)
