@@ -145,6 +145,7 @@ export default function LazyImage({
  * @returns
  */
 const adjustImgSize = (src, maxWidth) => {
+  return src
   if (!src) {
     return null
   }
